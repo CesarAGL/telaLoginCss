@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com CSS</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: aquamarine;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        label {
+            color: rgb(62, 62, 255);
+        }
+        input {
+            color: rgb(62, 62, 254);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            border-color: rgb(62, 62, 255);
+        }
+        select {
+            color: rgb(62, 62, 255);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            border-color: rgb(62, 62, 255);
+        }
+        button {
+            background-color: white;
+            color: rgb(62, 62, 255);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            border-color: rgb(62, 62, 255);
+        }
+    </style>
+</head>
+<body>
+    <form action="#php" method="post">
+        <label for="nome">Nome Completo:</label><br>
+        <input name="nome" id="nome" type="text" placeholder="Digite seu nome Completo" required><br><br>
+
+        <label for="endereco">E-mail:</label><br>
+        <input name="endereco" id="endereco" type="email" placeholder="Digite seu endereço de E-mail" required><br><br>
+
+        <label for="senha">Senha:</label><br>
+        <input name="senha" id="senha" type="password" placeholder="No máximo 10 caracteres" maxlength="10" required><br><br>
+
+        <label for="confirme">Confirme senha:</label><br>
+        <input name="confirme" id="confirme" type="password" placeholder="Confirme sua senha" required><br><br>
+
+        <label for="tipo">Qual tipo de usuário você é?</label><br>
+        <select name="tipo" id="tipo">
+            <option value="professor">Professor</option>
+            <option value="aluno">Aluno</option>
+            <option value="jogador">Jogador</option>
+        </select><br><br>
+
+        <button type="submit">Cadastrar</button>
+        <button type="reset">Limpar dados</button>
+
+    </form>
+</body>
+</html>
